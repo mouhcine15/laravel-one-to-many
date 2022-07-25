@@ -13,7 +13,7 @@ class CreateUsersDetailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('users_details', function (Blueprint $table) {
+        Schema::create('user_details', function (Blueprint $table) {
             $table->bigInteger('user_id');
             $table->string('address', 100);
             $table->string('phone', 20);
@@ -31,6 +31,6 @@ class CreateUsersDetailsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users_details');
+        Schema::dropIfExists('user_details');
     }
 }
